@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on The Mcarn Blog</title>
-    <link>http://mcarn.github.io/posts/</link>
+    <link>https://mcarn.github.io/posts/</link>
     <description>Recent content in Posts on The Mcarn Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Jul 2023 11:07:35 +0100</lastBuildDate><atom:link href="http://mcarn.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Jul 2023 11:07:35 +0100</lastBuildDate><atom:link href="https://mcarn.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mypost</title>
-      <link>http://mcarn.github.io/posts/mypost/</link>
+      <link>https://mcarn.github.io/posts/mypost/</link>
       <pubDate>Sun, 30 Jul 2023 11:07:35 +0100</pubDate>
       
-      <guid>http://mcarn.github.io/posts/mypost/</guid>
+      <guid>https://mcarn.github.io/posts/mypost/</guid>
       <description>This is some content.:q:q</description>
     </item>
     
