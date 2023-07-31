@@ -1,9 +1,9 @@
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
  <channel>
-   <title>Tags on The Mcarn Blog</title>
+   <title>Tags on mcarn</title>
    <link>https://mcarn.github.io/tags/</link>
-   <description>Recent content in Tags on The Mcarn Blog</description>
+   <description>Recent content in Tags on mcarn</description>
    <generator>Hugo -- gohugo.io</generator>
    <language>en-us</language>
    
@@ -11,12 +11,21 @@
    
    
      <item>
+       <title>Second</title>
+       <link>https://mcarn.github.io/posts/second/</link>
+       <pubDate>Sun, 30 Jul 2023 11:43:13 +0100</pubDate>
+       
+       <guid>https://mcarn.github.io/posts/second/</guid>
+       <description>&lt;p&gt;Second post&lt;/p&gt;</description>
+     </item>
+   
+     <item>
        <title>Mypost</title>
-       <link>https://mcarn.github.io/posts/mypost/</link>
+       <link>https://mcarn.github.io/posts/first/</link>
        <pubDate>Sun, 30 Jul 2023 11:07:35 +0100</pubDate>
        
-       <guid>https://mcarn.github.io/posts/mypost/</guid>
-       <description>&lt;p&gt;This is some content.:q:q&lt;/p&gt;</description>
+       <guid>https://mcarn.github.io/posts/first/</guid>
+       <description>&lt;p&gt;This is some content.&lt;/p&gt;</description>
      </item>
    
  </channel>
