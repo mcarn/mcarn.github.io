@@ -1,11 +1,12 @@
 
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
  <channel>
-   <title>Posts on mcarn</title>
+   <title>Posts on Mcarn Blog</title>
    <link>https://mcarn.github.io/posts/</link>
-   <description>Recent content in Posts on mcarn</description>
+   <description>Recent content in Posts on Mcarn Blog</description>
    <generator>Hugo -- gohugo.io</generator>
    <language>en-us</language>
+   <copyright>Copyright 1990-{year} mcarn. All rights reserved.</copyright>
    <lastBuildDate>Sun, 30 Jul 2023 11:43:13 +0100</lastBuildDate>
    
        <atom:link href="https://mcarn.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
@@ -21,7 +22,7 @@
      </item>
    
      <item>
-       <title>Mypost</title>
+       <title>First</title>
        <link>https://mcarn.github.io/posts/first/</link>
        <pubDate>Sun, 30 Jul 2023 11:07:35 +0100</pubDate>
        

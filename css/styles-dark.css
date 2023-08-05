@@ -286,6 +286,11 @@ width: 100%;
   list-style: none;
 }
 
+.footer__copyright{
+  color: #909090;
+  font-style: italic;
+}
+
 .meta-aside ul li, #container main section#home ul li aside ul li, #container main article aside ul li {
   margin: 0;
   padding: 0;
