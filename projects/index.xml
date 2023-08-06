@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects on Mcarn Blog</title>
+    <title>Projects on mcarn blog</title>
     <link>https://mcarn.github.io/projects/</link>
-    <description>Recent content in Projects on Mcarn Blog</description>
+    <description>Recent content in Projects on mcarn blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 1990-{year} mcarn. All rights reserved.</copyright><atom:link href="https://mcarn.github.io/projects/index.xml" rel="self" type="application/rss+xml" />
