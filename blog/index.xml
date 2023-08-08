@@ -1,28 +1,37 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on mcarn blog</title>
-    <link>https://mcarn.github.io/posts/</link>
-    <description>Recent content in Posts on mcarn blog</description>
+    <title>Blog on mcarn blog</title>
+    <link>https://mcarn.github.io/blog/</link>
+    <description>Recent content in Blog on mcarn blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Copyright 1990-{year} mcarn. All rights reserved.</copyright>
-    <lastBuildDate>Sun, 30 Jul 2023 11:43:13 +0100</lastBuildDate><atom:link href="https://mcarn.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 08 Aug 2023 15:42:30 +0100</lastBuildDate><atom:link href="https://mcarn.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Barbie</title>
+      <link>https://mcarn.github.io/blog/barbie/</link>
+      <pubDate>Tue, 08 Aug 2023 15:42:30 +0100</pubDate>
+      
+      <guid>https://mcarn.github.io/blog/barbie/</guid>
+      <description>This week I watched Barbie movie. Per chance movie of the year?</description>
+    </item>
+    
     <item>
       <title>Second</title>
-      <link>https://mcarn.github.io/posts/second/</link>
+      <link>https://mcarn.github.io/blog/second/</link>
       <pubDate>Sun, 30 Jul 2023 11:43:13 +0100</pubDate>
       
-      <guid>https://mcarn.github.io/posts/second/</guid>
+      <guid>https://mcarn.github.io/blog/second/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ligula et neque tempus bibendum. Cras a nulla eu neque cursus pellentesque. Aliquam nisl ante, pulvinar vel gravida id, rhoncus nec tortor. Donec vestibulum nisl metus, eu ullamcorper diam ultrices non. Mauris eu nisi convallis dolor lacinia hendrerit. Nam diam urna, hendrerit ac porta tempus, elementum nec ipsum. Suspendisse eleifend pellentesque neque vitae cursus. Cras porta maximus rhoncus. Quisque sed diam leo.</description>
     </item>
     
     <item>
       <title>First</title>
-      <link>https://mcarn.github.io/posts/first/</link>
+      <link>https://mcarn.github.io/blog/first/</link>
       <pubDate>Sun, 30 Jul 2023 11:07:35 +0100</pubDate>
       
-      <guid>https://mcarn.github.io/posts/first/</guid>
+      <guid>https://mcarn.github.io/blog/first/</guid>
       <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ligula et neque tempus bibendum. Cras a nulla eu neque cursus pellentesque. Aliquam nisl ante, pulvinar vel gravida id, rhoncus nec tortor. Donec vestibulum nisl metus, eu ullamcorper diam ultrices non. Mauris eu nisi convallis dolor lacinia hendrerit. Nam diam urna, hendrerit ac porta tempus, elementum nec ipsum. Suspendisse eleifend pellentesque neque vitae cursus. Cras porta maximus rhoncus. Quisque sed diam leo.</description>
     </item>
     
