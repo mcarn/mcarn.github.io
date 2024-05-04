@@ -11,5 +11,6 @@ import icon from "astro-icon";
 export default defineConfig({
   site: 'https://mcarn.github.io',
   compressHTML: true,
+	output: 'static'
   integrations: [tailwind(), sitemap(), markdoc(), mdx(), robotsTxt(), icon()]
 });
