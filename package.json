@@ -41,5 +41,9 @@
     "tailwindcss": "^3.4.3",
     "typescript": "^5.4.5",
     "typescript-eslint": "^7.8.0"
+  },
+  "devDependencies": {
+    "eslint-import-resolver-typescript": "3.6.1",
+    "eslint-plugin-import": "2.29.1"
   }
 }

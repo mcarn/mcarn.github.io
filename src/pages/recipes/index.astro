@@ -1,42 +1,30 @@
 ---
-import Seo from "@components/head/Seo.astro"
+import RecipePost from "@layouts/RecipePost.astro"
+import { SITE_TITLE } from "@source/consts"
 import { getCollection } from "astro:content"
-import Footer from "../../components/footer/Footer.astro"
-import Header from "../../components/header/Header.astro"
 import FormattedDate from "../../components/post/FormattedDate.astro"
-import { SITE_TITLE } from "../../consts"
 
 const posts = (await getCollection("recipes")).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 )
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<Seo title={SITE_TITLE} />
-	</head>
-	<body>
-		<Header />
-		<main>
-			<section>
-				<ul>
-					{
-						posts.map((post) => (
-							<li>
-								<a href={`/recipes/${post.slug}/`}>
-									<img width={720} height={360} src={post.data.heroImage} alt="" />
-									<h4 class="title">{post.data.name}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
-							</li>
-						))
-					}
-				</ul>
-			</section>
-		</main>
-		<Footer />
-	</body>
-</html>
+<RecipePost name={SITE_TITLE}>
+	<section>
+		<ul>
+			{
+				posts.map((post) => (
+					<li>
+						<a href={`/recipes/${post.slug}/`}>
+							<img width={720} height={360} src={post.data.heroImage} alt="" />
+							<h4 class="title">{post.data.name}</h4>
+							<p class="date">
+								<FormattedDate date={post.data.pubDate} />
+							</p>
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</section>
+</RecipePost>

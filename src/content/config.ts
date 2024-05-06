@@ -21,6 +21,7 @@ const recipeCollection = defineCollection({
 		preparationTime: z.number(),
 		cookingTime: z.number(),
 		pubDate: z.coerce.date(),
+		updatedDate: z.coerce.date().optional(),
 		heroImage: z.string().optional(),
 		image: z.string().optional(),
 		rank: z.number().gte(0).lte(10),
