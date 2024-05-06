@@ -5,9 +5,11 @@ import Twitter from "@components/footer/Twitter.astro"
 const today = new Date()
 ---
 
-<footer class="sticky bottom-0">
-	&copy; {today.getFullYear()} Your name here. All rights reserved.
-	<div class="bg-primary-200 flex flex-row justify-center space-x-4">
+<footer class="sticky bottom-0 flex-row space-x-8 space-y-4 bg-primary-200">
+	<p class="flex justify-center">
+		&copy; {today.getFullYear()} Your name here. All rights reserved.
+	</p>
+	<div class="flex flex-row justify-center space-x-4 bg-primary-200 pb-4">
 		<Twitter />
 		<Github />
 	</div>

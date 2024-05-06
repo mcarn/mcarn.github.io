@@ -22,7 +22,7 @@ export default {
 			options: {
 				useTabs: false,
 				tabWidth: 2,
-				arrowParens: true,
+				arrowParens: "always",
 			},
 		},
 		{
