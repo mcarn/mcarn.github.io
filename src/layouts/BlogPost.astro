@@ -1,22 +1,13 @@
 ---
-import Footer from "@components/footer/Footer.astro"
-import Seo from "@components/head/Seo.astro"
-import Header from "@components/header/Header.astro"
+import MainLayout from "./MainLayout.astro"
 
 const { title, description, pubDate, updatedDate, heroImage } = Astro.props
 ---
 
-<html lang="en">
-	<head>
-		<Seo title={title} />
-	</head>
-	<body>
-		<Header />
-		<main class="container mx-auto w-2/3">
-			<article>
-				<slot />
-			</article>
-		</main>
-		<Footer />
-	</body>
-</html>
+<MainLayout title={title}>
+	<main class="container mx-auto w-2/3">
+		<article>
+			<slot />
+		</article>
+	</main>
+</MainLayout>

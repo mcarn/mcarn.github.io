@@ -1,7 +1,5 @@
 ---
-import Footer from "@components/footer/Footer.astro"
-import Seo from "@components/head/Seo.astro"
-import Header from "@components/header/Header.astro"
+import MainLayout from "./MainLayout.astro"
 
 interface Props {
 	title: string
@@ -10,16 +8,8 @@ interface Props {
 const { title } = Astro.props
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<Seo title={title} />
-	</head>
-	<body>
-		<Header />
-		<div class="container mx-auto w-1/2">
-			<slot />
-		</div>
-		<Footer />
-	</body>
-</html>
+<MainLayout title={title}>
+	<div class="container mx-auto w-1/2">
+		<slot />
+	</div>
+</MainLayout>

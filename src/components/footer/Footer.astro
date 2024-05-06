@@ -1,15 +1,16 @@
 ---
 import Github from "@components/social/Github.astro"
 import Twitter from "@components/social/Twitter.astro"
+import { SITE_AUTHOR } from "@source/consts"
 
 const today = new Date()
 ---
 
-<footer class="bg-primary-200 sticky bottom-0 flex-row space-x-8 space-y-4">
+<footer class="sticky bottom-0 flex-row space-x-8 space-y-4 bg-neutral-950">
 	<p class="flex justify-center">
-		&copy; {today.getFullYear()} Your name here. All rights reserved.
+		&copy; {today.getFullYear()} ${SITE_AUTHOR}. All rights reserved.
 	</p>
-	<div class="bg-primary-200 flex flex-row justify-center space-x-4 pb-4">
+	<div class="flex flex-row justify-center space-x-4 pb-4">
 		<Twitter />
 		<Github />
 	</div>

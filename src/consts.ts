@@ -3,3 +3,4 @@
 
 export const SITE_TITLE = "Mcarn Blog"
 export const SITE_DESCRIPTION = "Dev and Chef!"
+export const SITE_AUTHOR = "mcarn"

@@ -42,14 +42,14 @@ export default {
 				h1: {
 					fontSize: theme("fontSize.3xl"),
 					fontWeight: theme("fontWeight.medium"),
-					color: theme("colors.primary.950"),
+					// color: theme("colors.neutral.200"),
 				},
-				p: {
-					color: theme("colors.primary.950"),
-				},
-				a: {
-					color: theme("colors.primary.600"),
-				},
+				// p: {
+				// 	color: theme("colors.primary.950"),
+				// },
+				// a: {
+				// 	color: theme("colors.primary.600"),
+				// },
 			})
 		}),
 	],
