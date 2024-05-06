@@ -1,18 +1,26 @@
 ---
+import img from "@assets/blog-placeholder-about.jpg"
 import { SEO } from "astro-seo"
 import { ViewTransitions } from "astro:transitions"
 
 interface Props {
 	title: string
 }
+
 const { title } = Astro.props
 ---
 
 <head>
-	<SEO title={title} />
+	<SEO
+		charset="UTF-8"
+		description="Astro description"
+		title={title}
+		openGraph={{
+			basic: { title, type: "website", image: img.src, url: Astro.url },
+		}}
+		twitter={{ title, image: img.src }}
+	/>
 
-	<meta charset="UTF-8" />
-	<meta name="description" content="Astro description" />
 	<meta name="viewport" content="width=device-width" />
 	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 	<meta name="generator" content={Astro.generator} />

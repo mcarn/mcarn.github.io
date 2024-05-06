@@ -13,4 +13,24 @@ const blog = defineCollection({
 	}),
 })
 
-export const collections = { blog }
+const recipeCollection = defineCollection({
+	type: "content",
+	schema: z.object({
+		name: z.string(),
+		cusine: z.string(),
+		preparationTime: z.number(),
+		cookingTime: z.number(),
+		pubDate: z.coerce.date(),
+		heroImage: z.string().optional(),
+		image: z.string().optional(),
+		rank: z.number().gte(0).lte(10),
+		ingredients: z.array(
+			z.object({
+				name: z.string(),
+				metric: z.string(),
+			})
+		),
+	}),
+})
+
+export const collections = { blog, recipes: recipeCollection }
