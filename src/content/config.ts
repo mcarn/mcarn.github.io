@@ -25,12 +25,8 @@ const recipeCollection = defineCollection({
 		heroImage: z.string().optional(),
 		image: z.string().optional(),
 		rank: z.number().gte(0).lte(10),
-		ingredients: z.array(
-			z.object({
-				name: z.string(),
-				metric: z.string(),
-			})
-		),
+		ingredients: z.array(z.string()),
+		original: z.array(z.string()).optional(),
 	}),
 })
 

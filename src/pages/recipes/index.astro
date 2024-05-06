@@ -4,7 +4,7 @@ import { SITE_TITLE } from "@source/consts"
 import { getCollection } from "astro:content"
 import FormattedDate from "../../components/post/FormattedDate.astro"
 
-const posts = (await getCollection("recipes")).sort(
+const recipes = (await getCollection("recipes")).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 )
 ---
@@ -13,13 +13,13 @@ const posts = (await getCollection("recipes")).sort(
 	<section>
 		<ul>
 			{
-				posts.map((post) => (
+				recipes.map(({ slug, data }) => (
 					<li>
-						<a href={`/recipes/${post.slug}/`}>
-							<img width={720} height={360} src={post.data.heroImage} alt="" />
-							<h4 class="title">{post.data.name}</h4>
-							<p class="date">
-								<FormattedDate date={post.data.pubDate} />
+						<a href={`/recipes/${slug}/`}>
+							<img width={720} height={360} src={data.heroImage} alt="" />
+							<h4 class="">{data.name}</h4>
+							<p class="">
+								<FormattedDate date={data.pubDate} />
 							</p>
 						</a>
 					</li>
