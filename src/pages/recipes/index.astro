@@ -7,6 +7,8 @@ import FormattedDate from "../../components/post/FormattedDate.astro"
 const recipes = (await getCollection("recipes")).sort(
 	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
 )
+
+console.log(recipes.length)
 ---
 
 <RecipePost name={SITE_TITLE}>
