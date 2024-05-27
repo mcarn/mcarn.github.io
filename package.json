@@ -5,14 +5,14 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build && touch dist/.nojekyll",
-    "check": "astro check",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint --ext .astro,.ts,.js,.tsx .",
-    "lint:fix": "eslint --ext .astro,.ts,.js,.tsx . --fix",
+    "lint": "eslint \"src/**/*.{js,astro,ts,tsx}\"",
+    "lint:fix": "eslint \"src/**/*.{js,astro,ts,tsx}\" --fix",
     "format": "prettier --write src",
-    "format:check": "prettier --check src"
+    "format:check": "prettier --check src",
+    "astro:upgrade": "pnpm dlx @astrojs/upgrade"
   },
   "dependencies": {
     "@antfu/eslint-config": "2.17.0",
@@ -42,6 +42,7 @@
     "eslint-plugin-astro": "1.1.2",
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-jsx-a11y": "6.8.0",
+    "oxlint": "0.3.5",
     "prettier": "3.2.5",
     "prettier-plugin-astro": "0.13.0",
     "prettier-plugin-astro-organize-imports": "0.4.7",
