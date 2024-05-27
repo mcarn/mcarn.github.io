@@ -1,6 +1,6 @@
 ---
+import RecipePost from "@layouts/RecipePost.astro"
 import { getCollection, type CollectionEntry } from "astro:content"
-import RecipePost from "../../layouts/RecipePost.astro"
 
 export async function getStaticPaths() {
 	const posts = await getCollection("recipes")
