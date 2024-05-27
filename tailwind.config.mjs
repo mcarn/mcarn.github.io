@@ -1,5 +1,3 @@
-import plugin from "tailwindcss/plugin"
-
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
@@ -36,21 +34,5 @@ export default {
 			},
 		},
 	},
-	plugins: [
-		plugin(({ addBase, theme }) => {
-			addBase({
-				h1: {
-					fontSize: theme("fontSize.3xl"),
-					fontWeight: theme("fontWeight.medium"),
-					// color: theme("colors.neutral.200"),
-				},
-				// p: {
-				// 	color: theme("colors.primary.950"),
-				// },
-				// a: {
-				// 	color: theme("colors.primary.600"),
-				// },
-			})
-		}),
-	],
+	plugins: [],
 }
