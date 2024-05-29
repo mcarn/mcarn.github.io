@@ -32,6 +32,9 @@ importers:
       '@eslint/js':
         specifier: 9.3.0
         version: 9.3.0
+      '@fontsource-variable/public-sans':
+        specifier: 5.0.19
+        version: 5.0.19
       astro:
         specifier: 4.9.2
         version: 4.9.2(@types/node@20.12.12)(typescript@5.4.5)
@@ -682,6 +685,9 @@ packages:
   '@eslint/js@9.3.0':
     resolution: {integrity: sha512-niBqk8iwv96+yuTwjM6bWg8ovzAPF9qkICsGtcoa5/dmqcEMfdwNAX7+/OHcJHc7wj7XqPxH98oAHytFYlw6Sw==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
+
+  '@fontsource-variable/public-sans@5.0.19':
+    resolution: {integrity: sha512-Tc1V139visg0xUgSe2vQy86OwHEGb0dO57vcrD6Cw2vDRf42sZ4fD7nTuY0Q0AjVNemT7RicmkR9qnB/MfJ6ug==}
 
   '@humanwhocodes/config-array@0.13.0':
     resolution: {integrity: sha512-DZLEEqFWQFiyK6h5YIeynKx7JlvCYWL0cImfSRXZ9l4Sg2efkFGTuFf6vzXjK1cq6IYkU+Eg/JizXw+TD2vRNw==}
@@ -5056,6 +5062,8 @@ snapshots:
       - supports-color
 
   '@eslint/js@9.3.0': {}
+
+  '@fontsource-variable/public-sans@5.0.19': {}
 
   '@humanwhocodes/config-array@0.13.0':
     dependencies:
