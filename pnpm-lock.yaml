@@ -13,13 +13,13 @@ importers:
         version: 0.7.0(prettier-plugin-astro@0.14.0)(prettier@3.2.5)(typescript@5.4.5)
       '@astrojs/mdx':
         specifier: 3.0.1
-        version: 3.0.1(astro@4.9.2(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5))
+        version: 3.0.1(astro@4.9.2(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5))
       '@astrojs/prism':
         specifier: 3.1.0
         version: 3.1.0
       '@astrojs/react':
         specifier: 3.4.0
-        version: 3.4.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.2.12(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0))
+        version: 3.4.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.2.12(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0))
       '@astrojs/rss':
         specifier: 4.0.6
         version: 4.0.6
@@ -28,13 +28,16 @@ importers:
         version: 3.1.5
       '@astrojs/tailwind':
         specifier: 5.1.0
-        version: 5.1.0(astro@4.9.2(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5))(tailwindcss@3.4.3)
+        version: 5.1.0(astro@4.9.2(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5))(tailwindcss@3.4.3)
       '@eslint/js':
         specifier: 9.3.0
         version: 9.3.0
       '@fontsource-variable/public-sans':
         specifier: 5.0.19
         version: 5.0.19
+      '@playform/compress':
+        specifier: ^0.0.10
+        version: 0.0.10(@types/node@20.12.13)(typescript@5.4.5)
       '@types/react':
         specifier: 18.3.3
         version: 18.3.3
@@ -43,13 +46,10 @@ importers:
         version: 18.3.0
       astro:
         specifier: 4.9.2
-        version: 4.9.2(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5)
-      astro-compress:
-        specifier: 2.2.26
-        version: 2.2.26(@types/node@20.12.12)(typescript@5.4.5)
+        version: 4.9.2(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5)
       astro-i18next:
         specifier: 1.0.0-beta.21
-        version: 1.0.0-beta.21(astro@4.9.2(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5))
+        version: 1.0.0-beta.21(astro@4.9.2(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5))
       astro-icon:
         specifier: 1.1.0
         version: 1.1.0
@@ -895,6 +895,9 @@ packages:
     resolution: {integrity: sha512-cq8o4cWH0ibXh9VGi5P20Tu9XF/0fFXl9EUinr9QfTM7a7p0oTA4iJRCQWppXR1Pg8dSM0UCItCkPwsk9qWWYA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
+  '@playform/compress@0.0.10':
+    resolution: {integrity: sha512-oJqLXVRSDXKgX+8ZxeiQd9dNTNplZZYThP+2nlSBgt/NedaFdKduKaryezdFK8ymwIjGSLE4DrrS8xazSxRRPw==}
+
   '@playform/pipe@0.0.5':
     resolution: {integrity: sha512-lUQTs5duOtnBvpfFzoiIUuZt6148PcEYv3pESm7kTaVaFAb2shhYLdueYcy4Jr1F6gCFsCv6jUvAwDD1f8f5ZQ==}
     peerDependencies:
@@ -1075,6 +1078,9 @@ packages:
 
   '@types/node@20.12.12':
     resolution: {integrity: sha512-eWLDGF/FOSPtAvEqeRAQ4C8LSA7M1I7i0ky1I8U7kD1J5ITyW3AsRhQrKVoWf5pFKZ2kILsEGJhsI9r93PYnOw==}
+
+  '@types/node@20.12.13':
+    resolution: {integrity: sha512-gBGeanV41c1L171rR7wjbMiEpEI/l5XFQdLLfhr/REwpgDy/4U8y89+i8kRiLzDyZdOkXh+cRaTetUnCYutoXA==}
 
   '@types/prop-types@15.7.12':
     resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
@@ -1291,9 +1297,6 @@ packages:
   astring@1.8.6:
     resolution: {integrity: sha512-ISvCdHdlTDlH5IpxQJIex7BWBywFWgjJSVdwst+/iQCoEYnyOaQ95+X1JGshuBjGp6nxKUy1jMgE3zPqN7fQdg==}
     hasBin: true
-
-  astro-compress@2.2.26:
-    resolution: {integrity: sha512-nVQ8g+RO2kcJzy5yUg2WcgMfYQUb5G929VMltnPH9mwuv7glavcmi07/hZzLVXLxr0drZWP9uc+O/T9J4eIZSA==}
 
   astro-eslint-parser@1.0.2:
     resolution: {integrity: sha512-8hJaCuqxObShWl2wEsnASqh/DbQ2O+S66m0Q3ctJlzBPEQ4pfGwwama3FCjZO3GDLQsjvn1T0v93Vxyu/+5fGw==}
@@ -1692,8 +1695,8 @@ packages:
   eastasianwidth@0.2.0:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
 
-  electron-to-chromium@1.4.783:
-    resolution: {integrity: sha512-bT0jEz/Xz1fahQpbZ1D7LgmPYZ3iHVY39NcWWro1+hA2IvjiPeaXtfSqrQ+nXjApMvQRE2ASt1itSLRrebHMRQ==}
+  electron-to-chromium@1.4.784:
+    resolution: {integrity: sha512-9CZwh+sDrhDAeOEFh8s3PqwduzTyYIeYwZolc1b9ENAUt3ePu7R1sJSCWr/820ISssRxCJUyHI9Wb7j+0Uo1AA==}
 
   emmet@2.4.7:
     resolution: {integrity: sha512-O5O5QNqtdlnQM2bmKHtJgyChcrFMgQuulI+WdiOw2NArzprUqqxUW6bgYtKvzKgrsYpuLWalOkdhNP+1jluhCA==}
@@ -3762,8 +3765,8 @@ packages:
   ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
 
-  tsconfck@3.0.3:
-    resolution: {integrity: sha512-4t0noZX9t6GcPTfBAbIbbIU4pfpCwh0ueq3S4O/5qXI1VwK1outmxhe9dOiEWqMz3MW2LKgDTpqWV+37IWuVbA==}
+  tsconfck@3.1.0:
+    resolution: {integrity: sha512-CMjc5zMnyAjcS9sPLytrbFmj89st2g+JYtY/c02ug4Q+CZaAtCgbyviI0n1YvjZE/pzoc6FbNsINS13DOL1B9w==}
     engines: {node: ^18 || >=20}
     hasBin: true
     peerDependencies:
@@ -4245,12 +4248,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@3.0.1(astro@4.9.2(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5))':
+  '@astrojs/mdx@3.0.1(astro@4.9.2(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5))':
     dependencies:
       '@astrojs/markdown-remark': 5.1.0
       '@mdx-js/mdx': 3.0.1
       acorn: 8.11.3
-      astro: 4.9.2(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5)
+      astro: 4.9.2(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5)
       es-module-lexer: 1.5.3
       estree-util-visit: 2.0.0
       github-slugger: 2.0.0
@@ -4270,11 +4273,11 @@ snapshots:
     dependencies:
       prismjs: 1.29.0
 
-  '@astrojs/react@3.4.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.2.12(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0))':
+  '@astrojs/react@3.4.0(@types/react-dom@18.3.0)(@types/react@18.3.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(vite@5.2.12(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0))':
     dependencies:
       '@types/react': 18.3.3
       '@types/react-dom': 18.3.0
-      '@vitejs/plugin-react': 4.3.0(vite@5.2.12(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0))
+      '@vitejs/plugin-react': 4.3.0(vite@5.2.12(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0))
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       ultrahtml: 1.5.3
@@ -4293,9 +4296,9 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.23.8
 
-  '@astrojs/tailwind@5.1.0(astro@4.9.2(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5))(tailwindcss@3.4.3)':
+  '@astrojs/tailwind@5.1.0(astro@4.9.2(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5))(tailwindcss@3.4.3)':
     dependencies:
-      astro: 4.9.2(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5)
+      astro: 4.9.2(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5)
       autoprefixer: 10.4.19(postcss@8.4.38)
       postcss: 8.4.38
       postcss-load-config: 4.0.2(postcss@8.4.38)
@@ -4896,6 +4899,30 @@ snapshots:
 
   '@pkgr/core@0.1.1': {}
 
+  '@playform/compress@0.0.10(@types/node@20.12.13)(typescript@5.4.5)':
+    dependencies:
+      '@playform/pipe': 0.0.5
+      '@types/csso': 5.0.4
+      '@types/html-minifier-terser': 7.0.2
+      astro: 4.9.2(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5)
+      csso: 5.0.5
+      html-minifier-terser: 7.2.0
+      kleur: 4.1.5
+      lightningcss: 1.25.1
+      sharp: 0.33.4
+      svgo: 3.3.2
+      terser: 5.31.0
+    transitivePeerDependencies:
+      - '@playform/build'
+      - '@playform/document'
+      - '@types/node'
+      - less
+      - sass
+      - stylus
+      - sugarss
+      - supports-color
+      - typescript
+
   '@playform/pipe@0.0.5':
     dependencies:
       '@types/node': 20.12.12
@@ -4991,7 +5018,7 @@ snapshots:
 
   '@types/cheerio@0.22.35':
     dependencies:
-      '@types/node': 20.12.12
+      '@types/node': 20.12.13
 
   '@types/cookie@0.6.0': {}
 
@@ -5052,6 +5079,10 @@ snapshots:
     dependencies:
       undici-types: 5.26.5
 
+  '@types/node@20.12.13':
+    dependencies:
+      undici-types: 5.26.5
+
   '@types/prop-types@15.7.12': {}
 
   '@types/react-dom@18.3.0':
@@ -5069,7 +5100,7 @@ snapshots:
 
   '@types/tar@6.1.13':
     dependencies:
-      '@types/node': 20.12.12
+      '@types/node': 20.12.13
       minipass: 4.2.8
 
   '@types/unist@2.0.10': {}
@@ -5078,7 +5109,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 20.12.12
+      '@types/node': 20.12.13
     optional: true
 
   '@typescript-eslint/eslint-plugin@7.11.0(@typescript-eslint/parser@7.11.0(eslint@9.3.0)(typescript@5.4.5))(eslint@9.3.0)(typescript@5.4.5)':
@@ -5164,14 +5195,14 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react@4.3.0(vite@5.2.12(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0))':
+  '@vitejs/plugin-react@4.3.0(vite@5.2.12(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0))':
     dependencies:
       '@babel/core': 7.24.6
       '@babel/plugin-transform-react-jsx-self': 7.24.6(@babel/core@7.24.6)
       '@babel/plugin-transform-react-jsx-source': 7.24.6(@babel/core@7.24.6)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.2.12(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0)
+      vite: 5.2.12(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0)
     transitivePeerDependencies:
       - supports-color
 
@@ -5341,30 +5372,6 @@ snapshots:
 
   astring@1.8.6: {}
 
-  astro-compress@2.2.26(@types/node@20.12.12)(typescript@5.4.5):
-    dependencies:
-      '@playform/pipe': 0.0.5
-      '@types/csso': 5.0.4
-      '@types/html-minifier-terser': 7.0.2
-      astro: 4.9.2(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5)
-      csso: 5.0.5
-      html-minifier-terser: 7.2.0
-      kleur: 4.1.5
-      lightningcss: 1.25.1
-      sharp: 0.33.4
-      svgo: 3.3.2
-      terser: 5.31.0
-    transitivePeerDependencies:
-      - '@playform/build'
-      - '@playform/document'
-      - '@types/node'
-      - less
-      - sass
-      - stylus
-      - sugarss
-      - supports-color
-      - typescript
-
   astro-eslint-parser@1.0.2(typescript@5.4.5):
     dependencies:
       '@astrojs/compiler': 2.8.0
@@ -5384,11 +5391,11 @@ snapshots:
       - supports-color
       - typescript
 
-  astro-i18next@1.0.0-beta.21(astro@4.9.2(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5)):
+  astro-i18next@1.0.0-beta.21(astro@4.9.2(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5)):
     dependencies:
       '@proload/core': 0.3.3
       '@proload/plugin-tsm': 0.2.1(@proload/core@0.3.3)
-      astro: 4.9.2(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5)
+      astro: 4.9.2(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5)
       i18next: 22.5.1
       i18next-browser-languagedetector: 7.2.1
       i18next-fs-backend: 2.3.1
@@ -5420,7 +5427,7 @@ snapshots:
       - prettier-plugin-astro
       - typescript
 
-  astro@4.9.2(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5):
+  astro@4.9.2(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0)(typescript@5.4.5):
     dependencies:
       '@astrojs/compiler': 2.8.0
       '@astrojs/internal-helpers': 0.4.0
@@ -5476,11 +5483,11 @@ snapshots:
       shiki: 1.6.1
       string-width: 7.1.0
       strip-ansi: 7.1.0
-      tsconfck: 3.0.3(typescript@5.4.5)
+      tsconfck: 3.1.0(typescript@5.4.5)
       unist-util-visit: 5.0.0
       vfile: 6.0.1
-      vite: 5.2.12(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0)
-      vitefu: 0.2.5(vite@5.2.12(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0))
+      vite: 5.2.12(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0)
+      vitefu: 0.2.5(vite@5.2.12(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0))
       which-pm: 2.2.0
       yargs-parser: 21.1.1
       zod: 3.23.8
@@ -5564,7 +5571,7 @@ snapshots:
   browserslist@4.23.0:
     dependencies:
       caniuse-lite: 1.0.30001625
-      electron-to-chromium: 1.4.783
+      electron-to-chromium: 1.4.784
       node-releases: 2.0.14
       update-browserslist-db: 1.0.16(browserslist@4.23.0)
 
@@ -5866,7 +5873,7 @@ snapshots:
 
   eastasianwidth@0.2.0: {}
 
-  electron-to-chromium@1.4.783: {}
+  electron-to-chromium@1.4.784: {}
 
   emmet@2.4.7:
     dependencies:
@@ -8484,7 +8491,7 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  tsconfck@3.0.3(typescript@5.4.5):
+  tsconfck@3.1.0(typescript@5.4.5):
     optionalDependencies:
       typescript: 5.4.5
 
@@ -8711,20 +8718,20 @@ snapshots:
       unist-util-stringify-position: 4.0.0
       vfile-message: 4.0.2
 
-  vite@5.2.12(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0):
+  vite@5.2.12(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0):
     dependencies:
       esbuild: 0.20.2
       postcss: 8.4.38
       rollup: 4.18.0
     optionalDependencies:
-      '@types/node': 20.12.12
+      '@types/node': 20.12.13
       fsevents: 2.3.3
       lightningcss: 1.25.1
       terser: 5.31.0
 
-  vitefu@0.2.5(vite@5.2.12(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0)):
+  vitefu@0.2.5(vite@5.2.12(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0)):
     optionalDependencies:
-      vite: 5.2.12(@types/node@20.12.12)(lightningcss@1.25.1)(terser@5.31.0)
+      vite: 5.2.12(@types/node@20.12.13)(lightningcss@1.25.1)(terser@5.31.0)
 
   volar-service-css@0.0.45(@volar/language-service@2.2.5):
     dependencies:
