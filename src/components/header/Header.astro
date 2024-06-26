@@ -1,0 +1,22 @@
+---
+import HeaderLink from "@components/header/HeaderLink.astro"
+import Github from "@components/social/Github.astro"
+import Twitter from "@components/social/Twitter.astro"
+import { SITE_TITLE } from "@source/consts.ts"
+---
+
+<header class="py-2">
+	<nav class="container mx-auto flex flex-col justify-between text-primary-50 lg:flex-row">
+		<h2><a href="/">{SITE_TITLE}</a></h2>
+		<div class="">
+			<HeaderLink href="/">Home</HeaderLink>
+			<HeaderLink href="/blog">Blog</HeaderLink>
+			<HeaderLink href="/recipes">Recipes</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink>
+		</div>
+		<div class="flex flex-row space-x-4">
+			<Twitter />
+			<Github />
+		</div>
+	</nav>
+</header>

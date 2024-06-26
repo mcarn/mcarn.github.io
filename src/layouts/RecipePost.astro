@@ -1,10 +1,13 @@
 ---
 import MainLayout from "./MainLayout.astro"
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props
+interface Props {
+	name: string
+}
+const { name } = Astro.props
 ---
 
-<MainLayout title={title}>
+<MainLayout title={name}>
 	<main class="container mx-auto w-2/3">
 		<article>
 			<slot />

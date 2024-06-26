@@ -1,0 +1,32 @@
+---
+import RecipePost from "@layouts/RecipePost.astro"
+import { SITE_TITLE } from "@source/consts"
+import { getCollection } from "astro:content"
+import FormattedDate from "../../components/post/FormattedDate.astro"
+
+const recipes = (await getCollection("recipes")).sort(
+	(a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf()
+)
+
+console.log(recipes.length)
+---
+
+<RecipePost name={SITE_TITLE}>
+	<section>
+		<ul>
+			{
+				recipes.map(({ slug, data }) => (
+					<li>
+						<a href={`/recipes/${slug}/`}>
+							<img width={720} height={360} src={data.heroImage} alt="" />
+							<h4 class="">{data.name}</h4>
+							<p class="">
+								<FormattedDate date={data.pubDate} />
+							</p>
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</section>
+</RecipePost>

@@ -11,21 +11,25 @@ export default {
 	useTabs: true,
 	endOfLine: "lf",
 	arrowParens: "always",
-	plugins: ["prettier-plugin-astro",
+	plugins: [
+		"prettier-plugin-astro",
 		"prettier-plugin-tailwindcss",
-		"prettier-plugin-astro-organize-imports"
+		"prettier-plugin-astro-organize-imports",
 	],
-	overrides: [{
+	overrides: [
+		{
 			files: ["*.json", "*.md", "*.toml", "*.yml"],
 			options: {
 				useTabs: false,
+				tabWidth: 2,
+				arrowParens: "always",
 			},
 		},
 		{
-			files: '*.astro',
+			files: "*.astro",
 			options: {
-				parser: 'astro',
+				parser: "astro",
 			},
 		},
 	],
-};
+}

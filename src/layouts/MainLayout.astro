@@ -1,0 +1,26 @@
+---
+import Footer from "@components/footer/Footer.astro"
+import Seo from "@components/head/Seo.astro"
+import Header from "@components/header/Header.astro"
+import "@fontsource-variable/public-sans"
+
+interface Props {
+	title: string
+}
+
+const { title } = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<Seo title={title} />
+	</head>
+	<body class="bg-neutral-900">
+		<Header />
+		<div>
+			<slot />
+		</div>
+		<Footer />
+	</body>
+</html>
