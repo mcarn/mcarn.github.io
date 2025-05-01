@@ -65,3 +65,10 @@ jobs:
           git push --tags
           git push
         shell: bash
+
+      - name: Trigger deploy workflow
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: deploy.yaml
+          token: ${{ secrets.GITHUB_TOKEN }}
+        if: ${{ success() }}
