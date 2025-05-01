@@ -1,4 +1,4 @@
-name: Release
+name: Release and Deploy
 
 on:
   workflow_dispatch:
@@ -10,13 +10,9 @@ on:
       - "deploy.yaml"
       - "dependabot.yml"
 
-permissions:
-  contents: write
-
 jobs:
-  release-tag:
+  release:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -51,7 +47,7 @@ jobs:
       - name: setup git config
         run: |
           git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
+          git config user.email "<\>"
 
       - name: Bump version
         run: |
@@ -66,9 +62,26 @@ jobs:
           git push
         shell: bash
 
-      - name: Trigger deploy workflow
-        uses: benc-uk/workflow-dispatch@v1
+  deploy:
+    needs: release
+    runs-on: ubuntu-latest
+    if: ${{ success() }}
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+      actions: write
+    environment:
+      name: github-pages
+    steps:
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+      - name: Install, build, and upload your site
+        uses: withastro/action@v3
         with:
-          workflow: deploy.yaml
-          token: ${{ secrets.GITHUB_TOKEN }}
-        if: ${{ success() }}
+          path: .
+          node-version: 20
+          package-manager: pnpm@latest
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
