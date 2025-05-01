@@ -1,3 +1,7 @@
+---
+const date = new Date().toISOString();
+const version = import.meta.env.npm_package_version;
+---
 <!doctype html>
 <html lang="en">
 	<head>
@@ -6,6 +10,9 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
+		<meta name="build-date" content={date} />
+		<meta name="version" content={version} />
+		<link rel="sitemap" href="/sitemap-index.xml" />
 	</head>
 	<body>
 		<slot />
