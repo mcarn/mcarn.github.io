@@ -6,6 +6,7 @@ on:
     branches: [main]
     paths-ignore:
       - "README.md"
+      - "CODEOWNERS"
       - "release.yml"
       - "deploy.yaml"
       - "dependabot.yml"
