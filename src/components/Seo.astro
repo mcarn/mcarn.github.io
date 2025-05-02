@@ -1,0 +1,24 @@
+---
+import { SEO } from "astro-seo"
+import { ClientRouter } from "astro:transitions"
+import { SITE_CONFIG } from "../utils/constants"
+
+const date = new Date().toISOString()
+const version = import.meta.env.npm_package_version
+
+const title = SITE_CONFIG.title
+const description = SITE_CONFIG.description
+---
+
+<SEO>
+  <title>{title}</title>
+  <meta name="generator" content={Astro.generator} />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="description" content={description} />
+  <meta name="build-date" content={date} />
+  <meta name="version" content={version} />
+  <link rel="sitemap" href="/sitemap-index.xml" />
+</SEO>
+<ClientRouter />

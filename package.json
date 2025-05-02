@@ -8,37 +8,49 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "eslint \"src/**/*.{js,astro,ts,tsx}\"",
-    "lint:fix": "eslint \"src/**/*.{js,astro,ts,tsx}\" --fix && prettier --write src",
-    "format": "prettier --write src",
-    "format:check": "prettier --check src",
+    "lint:fix": "eslint \"src/**/*.{js,astro,ts,tsx}\" --fix && prettier --write .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "format:json": "prettier --write \"**/*.json\"",
     "astro:upgrade": "pnpm dlx @astrojs/upgrade"
   },
   "dependencies": {
     "@astrojs/markdoc": "^0.14.2",
     "@astrojs/mdx": "^4.2.6",
     "@astrojs/sitemap": "^3.3.1",
+    "@lucide/astro": "^0.503.0",
+    "@playform/compress": "^0.1.9",
     "@tailwindcss/vite": "^4.1.5",
     "astro": "^5.7.10",
+    "astro-embed": "^0.9.0",
+    "astro-seo": "^0.8.4",
     "tailwindcss": "^4.1.5"
   },
   "devDependencies": {
-    "eslint-plugin-oxlint": "^0.16.8",
-    "oxlint": "^0.16.8",
-    "eslint": "^9.25.1",
-    "eslint-config-prettier": "^10.1.2",
-    "eslint-plugin-astro": "^1.3.1",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-prettier": "^5.2.6",
-    "eslint-plugin-unused-imports": "^4.1.4",
     "@eslint/js": "^9.25.1",
     "@stylistic/eslint-plugin": "^4.2.0",
     "@tailwindcss/typography": "^0.5.16",
     "@typescript-eslint/parser": "^8.31.0",
+    "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-plugin-astro": "^1.3.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-oxlint": "^0.16.8",
+    "eslint-plugin-prettier": "^5.2.6",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "oxlint": "^0.16.8",
     "prettier": "^3.5.3",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-astro-organize-imports": "^0.4.11",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "typescript-eslint": "^8.31.0",
-    "rollup-plugin-visualizer": "^5.14.0"
+    "rollup-plugin-visualizer": "^5.14.0",
+    "typescript-eslint": "^8.31.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@vercel/speed-insights",
+      "esbuild",
+      "sharp"
+    ]
   }
 }
