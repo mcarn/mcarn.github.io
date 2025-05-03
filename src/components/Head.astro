@@ -1,0 +1,33 @@
+---
+import { SEO } from "astro-seo"
+import { ClientRouter } from "astro:transitions"
+import { SITE_CONFIG } from "../utils/constants"
+
+const date = new Date().toISOString()
+const version = import.meta.env.npm_package_version
+
+const title = SITE_CONFIG.title
+const description = SITE_CONFIG.description
+---
+
+<head>
+  <SEO
+    title={title}
+    description={description}
+    twitter={{ creator: "@mcarnDev" }}
+    charset="UTF-8"
+    extend={{
+      link: [
+        { rel: "icon", href: "/favicon.ico", type: "image/svg+xml" },
+        { rel: "sitemap", href: "/sitemap-index.xml" },
+      ],
+      meta: [
+        { name: "generator", content: Astro.generator },
+        { name: "viewport", content: "width=device-width" },
+        { name: "build-date", content: date },
+        { name: "version", content: version },
+      ],
+    }}
+  />
+  <ClientRouter />
+</head>
