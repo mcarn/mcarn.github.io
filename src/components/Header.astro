@@ -1,0 +1,20 @@
+---
+import { SITE_CONFIG } from "../utils/constants"
+---
+
+<header class="flex justify-center bg-gray-900 p-4">
+  <nav class="m-0 flex list-none gap-8 p-0">
+    {
+      SITE_CONFIG.nav.map((item) => (
+        <li class="relative">
+          <a
+            href={item.href}
+            class="rounded-md px-4 py-2 font-medium text-gray-300 no-underline transition-colors hover:text-white"
+          >
+            {item.text}
+          </a>
+        </li>
+      ))
+    }
+  </nav>
+</header>

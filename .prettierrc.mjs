@@ -16,6 +16,7 @@ export default {
     "prettier-plugin-tailwindcss",
     "prettier-plugin-astro-organize-imports",
   ],
+  tailwindFunctions: ["tv"],
   overrides: [
     {
       files: ["*.json", "*.md", "*.toml", "*.yml"],
