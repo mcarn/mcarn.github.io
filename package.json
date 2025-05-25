@@ -15,10 +15,10 @@
     "astro:upgrade": "pnpm dlx @astrojs/upgrade"
   },
   "dependencies": {
-    "@astrojs/markdoc": "^0.14.2",
+    "@astrojs/markdoc": "^0.15.0",
     "@astrojs/mdx": "^4.3.0",
     "@astrojs/sitemap": "^3.4.0",
-    "@lucide/astro": "^0.503.0",
+    "@lucide/astro": "^0.511.0",
     "@playform/compress": "^0.1.9",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/vite": "^4.1.7",
@@ -45,7 +45,7 @@
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-astro-organize-imports": "^0.4.11",
     "prettier-plugin-tailwindcss": "^0.6.11",
-    "rollup-plugin-visualizer": "^5.14.0",
+    "rollup-plugin-visualizer": "^6.0.0",
     "typescript-eslint": "^8.32.1"
   },
   "pnpm": {
