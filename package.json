@@ -15,7 +15,7 @@
     "astro:upgrade": "pnpm dlx @astrojs/upgrade"
   },
   "dependencies": {
-    "@astrojs/markdoc": "^0.14.2",
+    "@astrojs/markdoc": "^0.15.0",
     "@astrojs/mdx": "^4.3.0",
     "@astrojs/sitemap": "^3.4.0",
     "@lucide/astro": "^0.503.0",
