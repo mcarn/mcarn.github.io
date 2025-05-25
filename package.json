@@ -16,13 +16,13 @@
   },
   "dependencies": {
     "@astrojs/markdoc": "^0.14.2",
-    "@astrojs/mdx": "^4.2.6",
+    "@astrojs/mdx": "^4.3.0",
     "@astrojs/sitemap": "^3.4.0",
     "@lucide/astro": "^0.503.0",
     "@playform/compress": "^0.1.9",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/vite": "^4.1.7",
-    "astro": "^5.7.13",
+    "astro": "^5.8.0",
     "astro-embed": "^0.9.0",
     "astro-seo": "^0.8.4",
     "tailwind-variants": "^1.0.0",
@@ -31,7 +31,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.27.0",
-    "@stylistic/eslint-plugin": "^4.2.0",
+    "@stylistic/eslint-plugin": "^4.4.0",
     "@tailwindcss/typography": "^0.5.16",
     "@typescript-eslint/parser": "^8.32.1",
     "eslint": "^9.27.0",
@@ -52,7 +52,8 @@
     "onlyBuiltDependencies": [
       "@vercel/speed-insights",
       "esbuild",
-      "sharp"
+      "sharp",
+      "@tailwindcss/oxide"
     ]
   }
 }
