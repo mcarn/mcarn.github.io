@@ -17,23 +17,23 @@
   "dependencies": {
     "@astrojs/markdoc": "^0.15.0",
     "@astrojs/mdx": "^4.3.0",
-    "@astrojs/sitemap": "^3.4.0",
-    "@lucide/astro": "^0.511.0",
+    "@astrojs/sitemap": "^3.4.1",
+    "@lucide/astro": "^0.513.0",
     "@playform/compress": "^0.1.9",
     "@tailwindcss/forms": "^0.5.10",
     "@tailwindcss/vite": "^4.1.8",
-    "astro": "^5.8.1",
+    "astro": "^5.9.0",
     "astro-embed": "^0.9.0",
     "astro-seo": "^0.8.4",
     "tailwind-variants": "^1.0.0",
     "tailwindcss": "^4.1.8",
-    "tw-animate-css": "^1.3.2"
+    "tw-animate-css": "^1.3.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.28.0",
-    "@stylistic/eslint-plugin": "^4.4.0",
+    "@stylistic/eslint-plugin": "^4.4.1",
     "@tailwindcss/typography": "^0.5.16",
-    "@typescript-eslint/parser": "^8.33.0",
+    "@typescript-eslint/parser": "^8.33.1",
     "eslint": "^9.28.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-astro": "^1.3.1",
@@ -46,7 +46,7 @@
     "prettier-plugin-astro-organize-imports": "^0.4.11",
     "prettier-plugin-tailwindcss": "^0.6.12",
     "rollup-plugin-visualizer": "^6.0.1",
-    "typescript-eslint": "^8.33.0"
+    "typescript-eslint": "^8.33.1"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
