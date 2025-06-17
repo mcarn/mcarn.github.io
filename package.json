@@ -46,7 +46,7 @@
     "prettier-plugin-astro-organize-imports": "^0.4.11",
     "prettier-plugin-tailwindcss": "^0.6.12",
     "rollup-plugin-visualizer": "^6.0.3",
-    "typescript-eslint": "^8.34.0"
+    "typescript-eslint": "^8.34.1"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
