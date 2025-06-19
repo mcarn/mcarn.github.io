@@ -18,8 +18,8 @@ importers:
         specifier: ^3.4.1
         version: 3.4.1
       '@lucide/astro':
-        specifier: ^0.514.0
-        version: 0.514.0(astro@5.9.2(@types/node@24.0.0)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.43.0)(terser@5.42.0)(typescript@5.8.3)(yaml@2.8.0))
+        specifier: ^0.517.0
+        version: 0.517.0(astro@5.9.2(@types/node@24.0.0)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.43.0)(terser@5.42.0)(typescript@5.8.3)(yaml@2.8.0))
       '@playform/compress':
         specifier: ^0.2.0
         version: 0.2.0(@types/node@24.0.0)(jiti@2.4.2)(rollup@4.43.0)(typescript@5.8.3)(yaml@2.8.0)
@@ -714,8 +714,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@lucide/astro@0.514.0':
-    resolution: {integrity: sha512-bHtrIBOIMnvbqtCJYTabkRfYXLPlolYk2oiVqbfio8f4gEK/t0sBqPG7pHQJSjAg++nKJsj4gdeKQAMUkNOr/Q==}
+  '@lucide/astro@0.517.0':
+    resolution: {integrity: sha512-ABeG4c+FvxeU9eqALVI/XbaykVT2Upc1UlYtC/OVGdLIFo+WtZdaACqpVKvCRSlgYlzT7ZJPwCn1YKhyfs14VQ==}
     peerDependencies:
       astro: ^4 || ^5
 
@@ -4333,7 +4333,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.0
 
-  '@lucide/astro@0.514.0(astro@5.9.2(@types/node@24.0.0)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.43.0)(terser@5.42.0)(typescript@5.8.3)(yaml@2.8.0))':
+  '@lucide/astro@0.517.0(astro@5.9.2(@types/node@24.0.0)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.43.0)(terser@5.42.0)(typescript@5.8.3)(yaml@2.8.0))':
     dependencies:
       astro: 5.9.2(@types/node@24.0.0)(jiti@2.4.2)(lightningcss@1.30.1)(rollup@4.43.0)(terser@5.42.0)(typescript@5.8.3)(yaml@2.8.0)
 
