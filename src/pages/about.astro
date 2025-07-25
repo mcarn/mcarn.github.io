@@ -2,4 +2,29 @@
 import Layout from "../layouts/Layout.astro"
 ---
 
-<Layout> About! </Layout>
+<Layout>
+  <section class="min-h-[60vh] flex items-center justify-center px-4 py-20 bg-[var(--color-bg)] text-[var(--color-text)]">
+    <div class="max-w-3xl mx-auto text-center">
+      <h1 class="text-4xl md:text-6xl font-bold mb-6">
+        About <span class="text-gradient">mcarn</span>
+      </h1>
+      <p class="text-lg md:text-xl text-[var(--color-text-muted)] mb-8 max-w-2xl mx-auto">
+        Hi! I'm Miguel Carneiro, a passionate Full Stack Developer who loves building modern web applications and exploring new technologies. I enjoy sharing my journey and insights through code, blogs, and open source projects.
+      </p>
+      <div class="mb-8">
+        <h2 class="text-2xl font-semibold mb-4 text-[var(--color-text)]">Skills & Interests</h2>
+        <ul class="flex flex-wrap justify-center gap-4 text-[var(--color-text-muted)]">
+          <li class="bg-[var(--color-bg-accent)] px-4 py-2 rounded-full">JavaScript / TypeScript</li>
+          <li class="bg-[var(--color-bg-accent)] px-4 py-2 rounded-full">Astro</li>
+          <li class="bg-[var(--color-bg-accent)] px-4 py-2 rounded-full">React</li>
+          <li class="bg-[var(--color-bg-accent)] px-4 py-2 rounded-full">Node.js</li>
+          <li class="bg-[var(--color-bg-accent)] px-4 py-2 rounded-full">CSS / Tailwind</li>
+          <li class="bg-[var(--color-bg-accent)] px-4 py-2 rounded-full">Open Source</li>
+        </ul>
+      </div>
+      <div>
+        <a href="https://github.com/mcarn" target="_blank" rel="noopener noreferrer" class="inline-block bg-gradient-primary text-white px-6 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity duration-300">Visit my GitHub</a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -2,20 +2,20 @@
 import { SITE_CONFIG } from "../utils/constants"
 ---
 
-<footer class="fixed bottom-0 left-0 w-full bg-gray-900 py-12 text-gray-300">
+<footer class="fixed bottom-0 left-0 w-full bg-[var(--color-bg-accent)] py-12 text-[var(--color-text-muted)]">
   <div class="container mx-auto px-4">
     <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
       <div>
-        <h3 class="mb-4 font-semibold text-gray-100">{SITE_CONFIG.name}</h3>
-        <p class="text-gray-400">{SITE_CONFIG.description}</p>
+        <h3 class="mb-4 font-semibold text-[var(--color-text)]">{SITE_CONFIG.name}</h3>
+        <p class="text-[var(--color-text-muted)]">{SITE_CONFIG.description}</p>
       </div>
 
       <div>
-        <h3 class="mb-4 font-semibold text-gray-100">Social</h3>
+        <h3 class="mb-4 font-semibold text-[var(--color-text)]">Social</h3>
         <div class="flex gap-4">
           <a
             href={SITE_CONFIG.social.github}
-            class="text-gray-400 transition-colors hover:text-white"
+            class="text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)]"
             aria-label="GitHub"
           >
             <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
@@ -27,7 +27,7 @@ import { SITE_CONFIG } from "../utils/constants"
           </a>
           <a
             href={SITE_CONFIG.social.twitter}
-            class="text-gray-400 transition-colors hover:text-white"
+            class="text-[var(--color-text-muted)] transition-colors hover:text-[var(--color-text)]"
             aria-label="Twitter"
           >
             <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
