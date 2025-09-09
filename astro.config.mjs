@@ -25,6 +25,14 @@ export default defineConfig({
     build: {
       sourcemap: true,
       manifest: true,
+      rollupOptions: {
+        output: {
+          // path names relative to `outDir`
+          entryFileNames: 'js/[name]-[hash].js',
+          chunkFileNames: 'js/chunks/[name]-[hash].js',
+          assetFileNames: 'static/[name]-[hash][extname]',
+        },
+      },
     },
   },
   integrations: [sitemap(), mdx(), markdoc(), playformCompress()],
