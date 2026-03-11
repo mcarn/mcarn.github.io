@@ -15,14 +15,14 @@
     "astro:upgrade": "pnpm dlx @astrojs/upgrade"
   },
   "dependencies": {
-    "@astrojs/markdoc": "^0.15.10",
-    "@astrojs/mdx": "^4.3.13",
-    "@astrojs/sitemap": "^3.7.0",
+    "@astrojs/markdoc": "^1.0.0",
+    "@astrojs/mdx": "^5.0.0",
+    "@astrojs/sitemap": "^3.7.1",
     "@lucide/astro": "^0.577.0",
     "@playform/compress": "^0.2.1",
     "@tailwindcss/forms": "^0.5.11",
     "@tailwindcss/vite": "^4.2.1",
-    "astro": "^5.18.0",
+    "astro": "^6.0.2",
     "astro-embed": "^0.12.0",
     "astro-seo": "^1.1.0",
     "tailwind-variants": "^3.2.2",
@@ -31,22 +31,22 @@
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
-    "@stylistic/eslint-plugin": "^5.9.0",
+    "@stylistic/eslint-plugin": "^5.10.0",
     "@tailwindcss/typography": "^0.5.19",
-    "@typescript-eslint/parser": "^8.56.1",
-    "eslint": "^10.0.2",
+    "@typescript-eslint/parser": "^8.57.0",
+    "eslint": "^10.0.3",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-astro": "^1.6.0",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-unused-imports": "^4.4.1",
-    "lightningcss": "^1.31.1",
+    "lightningcss": "^1.32.0",
     "prettier": "^3.8.1",
     "prettier-plugin-astro": "^0.14.1",
     "prettier-plugin-astro-organize-imports": "^0.4.11",
     "prettier-plugin-tailwindcss": "^0.7.2",
     "rollup-plugin-visualizer": "^7.0.1",
-    "typescript-eslint": "^8.56.1"
+    "typescript-eslint": "^8.57.0"
   },
   "pnpm": {
     "onlyBuiltDependencies": [
