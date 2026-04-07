@@ -2,4 +2,55 @@
 import Layout from "../layouts/Layout.astro"
 ---
 
-<Layout> Blog! </Layout>
+<Layout>
+  <section class="min-h-[70vh] flex items-center justify-center px-4 py-20 bg-[var(--color-bg)] text-[var(--color-text)]">
+    <div class="max-w-4xl mx-auto w-full">
+      <h1 class="mb-6 text-5xl md:text-6xl font-bold">
+        <span class="text-gradient">Blog</span>
+      </h1>
+      <p class="mb-12 text-xl text-[var(--color-text-muted)] max-w-2xl">
+        Thoughts on web development, open source, and technology. Coming soon!
+      </p>
+
+      <div class="rounded-lg border-2 border-dashed border-[var(--color-bg-accent)] bg-[var(--color-bg-accent)]/50 p-8 text-center md:p-12">
+        <div class="mb-6 text-6xl">📝</div>
+        <h2 class="mb-4 text-3xl font-semibold">Blog Posts Coming Soon</h2>
+        <p class="mb-6 text-lg text-[var(--color-text-muted)] max-w-lg mx-auto">
+          I'm working on sharing my insights and experiences. In the meantime, check out my projects on GitHub or follow me on social media for updates!
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="https://github.com/mcarn"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block bg-gradient-primary text-white px-8 py-3 rounded-full font-semibold hover:opacity-90 transition-opacity duration-300"
+          >
+            View GitHub
+          </a>
+          <a
+            href="/"
+            class="inline-block border-2 border-[var(--color-text-muted)] px-8 py-3 rounded-full font-semibold text-[var(--color-text)] hover:border-[var(--color-text)] transition-colors duration-300"
+          >
+            Back Home
+          </a>
+        </div>
+      </div>
+
+      <!-- Future blog stats -->
+      <div class="mt-12 grid grid-cols-3 gap-4 text-center">
+        <div>
+          <div class="text-3xl font-bold text-gradient">0</div>
+          <p class="text-sm text-[var(--color-text-muted)] mt-2">Published Posts</p>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-gradient">∞</div>
+          <p class="text-sm text-[var(--color-text-muted)] mt-2">Topics to Cover</p>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-gradient">100%</div>
+          <p class="text-sm text-[var(--color-text-muted)] mt-2">Quality Commitment</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

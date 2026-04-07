@@ -55,7 +55,7 @@ import { SITE_CONFIG } from "../utils/constants"
         aria-label="Twitter Profile"
       >
         <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-          <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+          <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417a9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
         </svg>
       </a>
     </div>
@@ -68,3 +68,85 @@ import { SITE_CONFIG } from "../utils/constants"
     </div>
   </div>
 </section>
+
+<!-- Projects/Skills Section -->
+<section class="px-4 py-20 bg-[var(--color-bg)] text-[var(--color-text)]">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">What I Do</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Frontend Development -->
+      <div class="fade-in-up rounded-lg border border-[var(--color-bg-accent)] bg-[var(--color-bg-accent)] p-6 transition-all duration-300 hover:border-[var(--color-primary)] hover:shadow-lg hover:shadow-[var(--color-primary)]/20">
+        <div class="mb-4 text-4xl">🎨</div>
+        <h3 class="mb-2 text-xl font-semibold">Frontend</h3>
+        <p class="text-[var(--color-text-muted)]">
+          Building responsive, modern UIs with React, Astro, and Tailwind CSS. Focus on user experience and performance.
+        </p>
+      </div>
+
+      <!-- Backend Development -->
+      <div class="fade-in-up rounded-lg border border-[var(--color-bg-accent)] bg-[var(--color-bg-accent)] p-6 transition-all duration-300 hover:border-[var(--color-secondary)] hover:shadow-lg hover:shadow-[var(--color-secondary)]/20">
+        <div class="mb-4 text-4xl">⚙️</div>
+        <h3 class="mb-2 text-xl font-semibold">Backend</h3>
+        <p class="text-[var(--color-text-muted)]">
+          Crafting robust APIs and servers with Node.js, TypeScript, and modern databases. Scalability and reliability matter.
+        </p>
+      </div>
+
+      <!-- Open Source -->
+      <div class="fade-in-up rounded-lg border border-[var(--color-bg-accent)] bg-[var(--color-bg-accent)] p-6 transition-all duration-300 hover:border-[var(--color-accent)] hover:shadow-lg hover:shadow-[var(--color-accent)]/20">
+        <div class="mb-4 text-4xl">🚀</div>
+        <h3 class="mb-2 text-xl font-semibold">Open Source</h3>
+        <p class="text-[var(--color-text-muted)]">
+          Contributing to the community and maintaining projects. Believe in sharing knowledge and collaborative development.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .fade-in-up.visible {
+    animation: fadeInUp 0.6s ease-out forwards;
+  }
+</style>
+
+<script>
+  // Intersection Observer for scroll animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: "0px 0px -100px 0px",
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, index) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible")
+        const delay = Array.from(entry.target.parentElement?.children || []).indexOf(entry.target)
+        entry.target.style.animationDelay = `${delay * 0.1}s`
+      }
+    })
+  }, observerOptions)
+
+  // Observe all fade-in-up elements
+  document.querySelectorAll(".fade-in-up").forEach((el) => {
+    observer.observe(el)
+  })
+</script>
