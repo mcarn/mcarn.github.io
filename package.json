@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "@astrojs/markdoc": "^1.0.3",
-    "@astrojs/mdx": "^5.0.3",
+    "@astrojs/mdx": "^5.0.4",
     "@astrojs/sitemap": "^3.7.2",
     "@lucide/astro": "^0.577.0",
     "@playform/compress": "^0.2.2",
