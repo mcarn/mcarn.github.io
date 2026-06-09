@@ -35,7 +35,7 @@
     "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.48.2",
     "@stylistic/eslint-plugin": "^5.10.0",
-    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/typography": "^0.5.20",
     "@typescript-eslint/parser": "^8.59.2",
     "eslint": "^10.3.0",
     "eslint-config-prettier": "^10.1.8",
