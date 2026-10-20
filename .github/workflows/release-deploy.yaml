@@ -83,7 +83,7 @@ jobs:
         uses: withastro/action@v6
         with:
           path: .
-          node-version: 20
+          node-version: 24
           package-manager: pnpm@12.14.0
       - name: Deploy to GitHub Pages
         id: deployment
