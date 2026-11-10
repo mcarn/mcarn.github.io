@@ -24,7 +24,7 @@
     "@lucide/astro": "^1.67.0",
     "@playform/compress": "^0.2.5",
     "@tailwindcss/forms": "^0.5.11",
-    "@tailwindcss/vite": "^4.3.4",
+    "@tailwindcss/vite": "^4.3.5",
     "astro": "^7.4.5",
     "astro-embed": "^0.14.0",
     "astro-seo": "^1.2.0",
