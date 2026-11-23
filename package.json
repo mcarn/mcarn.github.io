@@ -20,7 +20,7 @@
   "dependencies": {
     "@astrojs/markdoc": "^2.1.5",
     "@astrojs/mdx": "^8.1.6",
-    "@astrojs/sitemap": "^3.7.5",
+    "@astrojs/sitemap": "^3.7.6",
     "@lucide/astro": "^1.73.0",
     "@playform/compress": "^0.2.5",
     "@tailwindcss/forms": "^0.5.11",
